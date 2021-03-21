@@ -15,22 +15,24 @@ display: flex;
 
 .block_content {
     /*display: flex;*/
-    width: 330px;
-    height: 70px;
+    width: max-content;
+    height: max-content;
     background-color: #2f9bf6;
-    margin: 12px 0 0 10px;
+    margin: 10px 0 0 10px;
     border-radius: 5px;
 }
 .nameItem {
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 50px;
     color: #fdd005;
 }
 
 .messageItem {
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 20px;
     color: chartreuse;
 }
 .timeItem {
-    margin: 6px 0 0 280px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 5px 0 280px;
     color: #000000;
 }

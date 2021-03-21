@@ -13,7 +13,7 @@ function HW1() {
 
             <Message
                 name={"Steve"}
-                message={'Для чего нужен HOC React.memo?'}
+                message={'Для чего нужен HOC React.memo? '}
                 time={'22.00'}
             />
 

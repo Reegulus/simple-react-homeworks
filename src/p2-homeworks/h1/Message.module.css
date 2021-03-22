@@ -21,8 +21,18 @@ display: flex;
     margin: 10px 0 0 10px;
     border-radius: 5px;
 }
+.block_content:after {
+    content: '';
+    position: absolute;
+    display:block;
+    top: 124px;
+    left: 70px;
+    border: 20px solid transparent;
+    border-right: 20px solid green;
+    border-bottom: 20px solid green;
+}
 .nameItem {
-    margin: 0 20px 0 50px;
+    margin: 0 10px 0 10px;
     color: #fdd005;
 }
 

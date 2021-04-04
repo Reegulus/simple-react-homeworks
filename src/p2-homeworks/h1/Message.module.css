@@ -3,7 +3,7 @@ display: flex;
     width: 430px;
     height: 230px;
     background-color: #405969;
-
+    margin: 0 auto;
 }
 .img img{
     width: 50px;

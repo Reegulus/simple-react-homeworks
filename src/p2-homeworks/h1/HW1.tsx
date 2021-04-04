@@ -5,7 +5,7 @@ import { Message } from './Message';
 
 function HW1() {
     return (
-        <div>
+        <div >
             <hr/>
             homeworks 1<br/>
 

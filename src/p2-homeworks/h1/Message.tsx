@@ -8,11 +8,14 @@ export type MessageDataPropsType = {
 }
 
 export function Message(props: MessageDataPropsType) {
+   /* let messageObj = {
+        name: Steve
 
+    }*/
     return (
 
-        <div className={s.message}>
-            <div className={s.img}>
+        <div className={s.body}>
+            <div className={s.imgItem}>
                 <img src='https://avatanplus.com/files/resources/original/57b3fe6c4059a1569719d6e8.png' alt=""/>
             </div>
             <div className={s.block_content}>

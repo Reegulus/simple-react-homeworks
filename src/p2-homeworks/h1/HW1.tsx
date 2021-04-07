@@ -1,7 +1,12 @@
 import React from 'react';
 import { Message } from './Message';
 
-
+const messageDate = {
+    avatar: 'https://avatanplus.com/files/resources/original/57b3fe6c4059a1569719d6e8.png',
+    name: "Steve",
+    message: 'Для чего нужен HOC React.memo? ',
+    time: '22.00'
+}
 
 function HW1() {
 
@@ -14,9 +19,11 @@ function HW1() {
             should work (должно работать)
 
             <Message
-                name={"Steve"}
-                message={'Для чего нужен HOC React.memo? '}
-                time={'22.00'}
+                avatar={messageDate.avatar}
+                name={messageDate.name}
+                message={messageDate.message}
+                time={messageDate.time}
+
             />
 
             <hr/>

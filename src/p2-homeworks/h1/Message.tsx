@@ -1,31 +1,28 @@
 import React from 'react';
 import s from './Message.module.css';
 
-export type MessageDataPropsType = {
+export type MessagePropsType = {
+    avatar: string
     name: string,
     message: string,
     time: string
 }
 
-export function Message(props: MessageDataPropsType) {
-   /* let messageObj = {
-        name: Steve
-
-    }*/
+export function Message(props: MessagePropsType) {
     return (
+        <div className={s.message}>
+                <img src={props.avatar} className={s.avatar}/>
 
-        <div className={s.body}>
-            <div className={s.imgItem}>
-                <img src='https://avatanplus.com/files/resources/original/57b3fe6c4059a1569719d6e8.png' alt=""/>
-            </div>
+            <div className={s.messageСorner}/>
+
             <div className={s.block_content}>
-                <div className={s.nameItem}>
+                <div className={s.name}>
                     {props.name}
                 </div>
-                <div className={s.messageItem}>
+                <div className={s.text}>
                     {props.message}
                 </div>
-                <div className={s.timeItem}>
+                <div className={s.time}>
                     {props.time}
                 </div>
             </div>

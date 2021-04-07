@@ -1,73 +1,48 @@
-.body {
+.message {
     display: flex;
-    width: 430px;
-    height: 230px;
-    background-color: #405969;
-    margin: 0 auto;
+    align-items: flex-end;
+    /*width: 450px;*/
+    /*height: 250px;*/
+    /*background-color: #405969;*/
+    margin: 10px;
 }
 
-/*div {
-    max-width: 255px;
-    word-wrap: break-word;
-    margin-bottom: 12px;
-    line-height: 24px;
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 25px;
-}*/
-
-.imgItem img {
+.avatar {
     width: 50px;
     height: 50px;
     background-color: white;
-    border-radius: 30px;
-    margin: 20px 0 0 10px;
+    border-radius: 50%;
 }
 
 .block_content {
-    /*position: relative;*/
-    width: max-content;
-    height: max-content;
+    padding: 10px;
     background-color: #2f9bf6;
-    margin: 10px 0 0 40px;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 0;
 }
 
-.block_content:before {
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 28px;
-    margin-top: 53px;
-    left: 640px;
-    background-color: #2f9bf6;
-    border-bottom-right-radius: 19px 26px;
-
- }
-
-.block_content:after {
-    content: '';
-    position: fixed;
-    width: 29px;
-    height: 30px;
-    margin-top: -29px;
-    right: 883px;
-    background-color: #405969;
-    border-bottom-right-radius: 23px;
- }
-
-
-.nameItem {
-    margin: 0 10px 0 10px;
-    color: #fdd005;
+.messageСorner {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 3% 17%, white 71%, #eee 0%, #2f9bf6 0%)
 }
-.messageItem {
-    margin: 0 20px 0 20px;
-    color: chartreuse;
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #dcc36b;
+    font-family: cursive;
 }
-.timeItem {
+
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+    font-family: cursive;
+}
+
+.time {
     display: flex;
     justify-content: flex-end;
-    margin: 8px 5px 0 280px;
     color: #000000;
+    font-family: cursive;
 }

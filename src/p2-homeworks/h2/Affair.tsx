@@ -7,7 +7,7 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {}// need to fix
+    const deleteCallback = () => {alert('del')}// need to fix
 
     return (
         <div>

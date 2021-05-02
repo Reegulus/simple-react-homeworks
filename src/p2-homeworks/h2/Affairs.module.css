@@ -1,3 +1,29 @@
-.someClass {
+.button {
+    margin: 10px;
+    width: 60px;
 
+    background: #819cde;
+    color: #ffffff;
+    /*outline: none;*/
+}
+.button:active {
+    background: #30ce19;
+}
+.active {
+    background: plum;
+}
+.affair {
+    display: flex;
+}
+.item {
+    color: #147fdc;
+}
+.high {
+    color: coral;
+}
+.middle {
+    color: orange;
+}
+.low {
+    color: greenyellow;
 }

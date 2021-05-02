@@ -1,19 +1,20 @@
 import React from 'react'
+import {AffairType} from "./HW2";
+import s from './Affairs.module.css'
 
 type AffairPropsType = {
-    // key не нужно типизировать
-    affair: any // need to fix any
-    deleteAffairCallback: any // need to fix any
+    affair: AffairType
+    deleteAffairCallback: (id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {alert('del')}// need to fix
-
+    const deleteCallback = () => {props.deleteAffairCallback(props.affair._id)}
+const priorityClass = s.item + ' ' + s[props.affair.priority]
     return (
-        <div>
-            // show some text
-
-            <button onClick={deleteCallback}>X</button>
+        <div className={s.affair}>
+            <div><h3 className={s.item}>{props.affair.name + ' '}</h3></div>
+            <div><h4 className={priorityClass}>--{props.affair.priority}--</h4></div>
+            <button onClick={deleteCallback} className={s.item + ' ' + s.button}>X</button>
         </div>
     )
 }
